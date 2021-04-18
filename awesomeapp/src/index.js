@@ -17,18 +17,24 @@ const heading={
   margin:"70px 0",
   fontFamily:'"Josfin Sans",sans-serif',
 };
+const img_dis={
+  display: "flex-container",
+  justifyContent: "center",
+  width: "250px",
+  height: "300px",
+};
 
 ReactDOM.render(
   <>
     <h1 style={heading} > My name is {name}</h1>
 
-    <div className="img_div">
-      <img src={img1} alt="ramdomImage"/>
-      <img src={img2} alt="ramdomImage"/>
-      <img src={img4} alt="randiomImage"/>
+    <div >
+      <img src={img1} style={img_dis} alt="ramdomImage"/>
+      <img src={img2}  style={img_dis} alt="ramdomImage"/>
+      <img src={img4} style={img_dis} alt="randiomImage"/>
       <a href={link}>
 
-        <img src={img3} alt="github"/>
+        <img src={img3} style={img_dis} alt="github"/>
 
       </a>
     </div>
